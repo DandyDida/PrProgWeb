@@ -120,3 +120,67 @@
     </footer>
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Asisten Dosen FTI</title>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td><a href="https://ukdw.ac.id/"><img src="logo_ukdw.png" alt="Logo UKDW" width="50"></a></td>
+                <td><h1>Universitas Kristen Duta Wacana</h1></td>
+            </tr>
+        </table>
+        <hr>
+    </header>
+    <main>
+        <h2>Form Pendaftaran Asisten Dosen FTI UKDW</h2>
+        <a href="https://ukdw.ac.id/akademik/fakultas-teknologi-informasi/"><img src="logo_fti.png" alt="Logo FTI" width="250"></a>
+        <form id="formPendaftaran" action="hasil.html" method="POST">
+            <fieldset>
+                <legend>Data Diri</legend>
+                <label>NIM:</label> <input type="number" name="nim" max="99999999" required><br>
+                <label>Nama Lengkap:</label> <input type="text" name="nama" maxlength="50" required><br>
+                <label>Tempat Lahir:</label> <input type="text" name="tempat" maxlength="50" required><br>
+                <label>Tanggal Lahir:</label> <input type="date" name="tanggal" required><br>
+                <label>Jenis Kelamin:</label>
+                <input type="radio" name="gender" value="Laki-laki" required> Laki-laki
+                <input type="radio" name="gender" value="Perempuan" required> Perempuan<br>
+                <label>Program Studi:</label>
+                <select name="prodi" required>
+                    <option value="">Pilih...</option>
+                    <option value="Informatika">Informatika</option>
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                </select><br>
+                <label>Upload Foto Diri:</label> <input type="file" name="foto" accept="image/*" required><br>
+            </fieldset>
+            <fieldset>
+                <legend>Data Akademik & Pilihan</legend>
+                <label>IPK Terakhir:</label> <input type="number" step="0.01" name="ipk" required><br>
+                <label>Mata Kuliah Pilihan:</label>
+                <input type="checkbox" name="mk1" value="Pemrograman Web"> Pemrograman Web
+                <input type="checkbox" name="mk2" value="Jaringan Komputer"> Jaringan Komputer
+                <input type="checkbox" name="mk3" value="Sistem Basis Data"> Sistem Basis Data<br>
+            </fieldset>
+            <fieldset>
+                <legend>Kontak</legend>
+                <label>Email:</label> <input type="email" name="email" required><br>
+                <label>Nomor Telepon:</label> <input type="number" name="telepon" max="9999999999999" required><br>
+            </fieldset>
+            <button type="reset">Reset</button>
+            <button type="submit">Simpan</button>
+        </form>
+        <hr>
+    </main>
+    <footer>
+        <strong>Nama: [Nama Anda] | NIM: [NIM Anda]</strong>
+    </footer>
+</body>
+</html>
+
